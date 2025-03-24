@@ -21,9 +21,10 @@ public class SimpleTest {
 	@Severity(SeverityLevel.NORMAL)
 	@Description("THis is a very basic test to understand Allure")
 	@Step("Step should go into page class along with each method but adding it here just to see {0}")
-	@Parameters({"webSite"})
+	@Parameters({"webSite","myName"})
 	@Test
-	public void doAll(String website) {
+	public void doAll(String website,String myname) {
+		System.out.println("MY NAME IS "+ myname);
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.get(website);

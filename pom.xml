@@ -47,8 +47,11 @@
         <version>3.5.2</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>Runners/testng.xml</suiteXmlFile>
+            <suiteXmlFile>Runners/${RunnerFile}</suiteXmlFile>
           </suiteXmlFiles>
+          <systemPropertyVariables> 
+			<bossname>${bossname}</bossname>
+		  </systemPropertyVariables>
         </configuration>
       </plugin>
 </plugins>
