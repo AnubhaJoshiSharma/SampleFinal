@@ -1,0 +1,8 @@
+<suite name="Hello">
+	<test name="sample test"> 
+		<parameter name = "webSite" value="https://www.google.com/"></parameter>
+		<classes>
+			<class name = "com.SampleFinal.SimpleTest"></class>
+		</classes>
+	</test>
+</suite>
