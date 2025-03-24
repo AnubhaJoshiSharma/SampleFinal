@@ -50,7 +50,7 @@
             <suiteXmlFile>Runners/${RunnerFile}</suiteXmlFile>
           </suiteXmlFiles>
           <systemPropertyVariables> 
-			<bossname>${provideName}</bossname>
+			<bossname>${myName}</bossname>
 		  </systemPropertyVariables>
         </configuration>
       </plugin>
